@@ -1,0 +1,22 @@
+language: php
+php:
+  - 5.6
+#  - 7.0
+#  - hhvm
+before_script:
+  - travis_retry composer self-update
+install:
+  - composer install --prefer-dist --no-interaction
+script:
+  - phpunit --coverage-clover=coverage.xml
+  - vendor/bin/php-cs-fixer fix --dry-run
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+## Run on container environment
+sudo: false
+
+## Cache composer bits
+cache:
+  directories:
+    - $HOME/.composer/cache
