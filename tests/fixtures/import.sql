@@ -1,12 +1,15 @@
 CREATE TABLE IF NOT EXISTS `test_table` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `column_1` varchar(50) NOT NULL DEFAULT '',
-  `column_2` varchar(50) NOT NULL DEFAULT '',
-  `column_3` varchar(50) NOT NULL DEFAULT '',
+  `id`       INT(11)     NOT NULL AUTO_INCREMENT,
+  `column_1` VARCHAR(50) NOT NULL DEFAULT '',
+  `column_2` VARCHAR(50) NOT NULL DEFAULT '',
+  `column_3` VARCHAR(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+)
+  ENGINE = InnoDB
+  AUTO_INCREMENT = 3
+  DEFAULT CHARSET = latin1;
 
 INSERT INTO `test_table` (`id`, `column_1`, `column_2`, `column_3`) VALUES
-	(1, 'c1.1', 'c1.2', 'c3.1'),
-	(2, 'c2.1', 'c2.2', 'c3.2'),
-	(3, 'c3.1', 'c3.2', 'c3.3');
+  (1, 'c1.1', 'c1.2', 'c3.1'),
+  (2, 'c2.1', 'c2.2', 'c3.2'),
+  (3, 'c3.1', 'c3.2', 'c3.3');
