@@ -1,0 +1,7 @@
+vendor/
+docs/build/
+composer.lock
+.idea/
+tests/config.php
+_vm/
+*.log

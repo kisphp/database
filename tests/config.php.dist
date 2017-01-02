@@ -1,0 +1,8 @@
+<?php
+
+// rename this file as config.php and change it as you need
+
+define('DATABASE_HOST', 'localhost');
+define('DATABASE_USER', 'root');
+define('DATABASE_PASS', '');
+define('DATABASE_NAME', 'test');
