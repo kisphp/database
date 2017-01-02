@@ -5,6 +5,9 @@ php:
 #  - hhvm
 before_script:
   - travis_retry composer self-update
+  - cp tests/config.php.dist tests/config.php
+before_install:
+  - mysql -e "CREATE DATABASE kisphp_database;"
 install:
   - composer install --prefer-dist --no-interaction
 script:
@@ -15,6 +18,9 @@ after_success:
 
 ## Run on container environment
 sudo: false
+
+services:
+  - mysql
 
 ## Cache composer bits
 cache:
