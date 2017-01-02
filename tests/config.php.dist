@@ -2,7 +2,7 @@
 
 // rename this file as config.php and change it as you need
 
-define('DATABASE_HOST', 'localhost');
+define('DATABASE_HOST', '127.0.0.1');
 define('DATABASE_USER', 'root');
 define('DATABASE_PASS', '');
-define('DATABASE_NAME', 'test');
+define('DATABASE_NAME', 'kisphp_database');
